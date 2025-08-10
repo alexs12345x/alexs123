@@ -5,3 +5,10 @@
   events:
   - type: PUSH
   fail_on_prepare_env_warning: true
+  actions:
+  - action: gh auth status
+    type: GIT_HUB_CLI
+    integration: alexs12345x
+    execute_commands:
+    - gh auth status
+    shell: BASH
